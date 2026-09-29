@@ -3,7 +3,7 @@
   // Hard-coded so the page also works when opened straight from disk (file://),
   // where fetching manifest.json is blocked.
   const FRAME_COUNT = 193;
-  const framePath = (i) => `${FRAME_DIR}frame_${String(i + 1).padStart(4, "0")}.webp`;
+  const framePath = (i) => `${FRAME_DIR}frame_${String(i + 1).padStart(4, "0")}.webp?v=early-harvest-1`;
 
   const section = document.getElementById("pour");
   const canvas = document.getElementById("pour-canvas");
@@ -39,19 +39,20 @@
     const cover = Math.max(cw / iw, ch / ih);
     const contain = Math.min(cw / iw, ch / ih);
     const portrait = cw / ch < 1;
-    const scale = portrait ? Math.max(contain * 1.9, Math.min(cover, contain * 2.4)) : cover;
+    const scale = portrait ? Math.min(cover, contain * 1.55) : cover;
     const w = iw * scale, h = ih * scale;
-    const focusX = 0.52;
+    const focusX = portrait ? 0.48 : 0.52;
     let x = cw / 2 - w * focusX;
     x = Math.min(0, Math.max(cw - w, x));
-    const y = (ch - h) / 2;
+    // Leave room below the wider Early Harvest bottle for the mobile captions.
+    const y = (ch - h) * (portrait ? 0.30 : 0.5);
     ctx.fillStyle = "#1f2610";
     ctx.fillRect(0, 0, cw, ch);
     ctx.drawImage(img, x, y, w, h);
 
     // Soften the letterbox edges when the frame doesn't fill the screen.
     if (y > 1) {
-      const f = Math.min(h * 0.18, y + 40);
+      const f = Math.min(h * 0.06, y + 40);
       const top = ctx.createLinearGradient(0, y, 0, y + f);
       top.addColorStop(0, "#1f2610");
       top.addColorStop(1, "rgba(31,38,16,0)");
