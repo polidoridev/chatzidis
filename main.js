@@ -118,9 +118,10 @@
   }
   function applyMotion() {
     document.body.classList.toggle("motion-enabled", motion);
-    toggle.textContent = motion ? "Pause animation" : "Play animation";
+    toggle.textContent = motion ? "Pause animations" : "Play animations";
     if (!motion) { queue = []; canvas.classList.remove("ready"); }
     resize();
+    document.dispatchEvent(new CustomEvent("site:motionchange"));
   }
   toggle.hidden = false;
   toggle.addEventListener("click", () => { motion = !motion; applyMotion(); });

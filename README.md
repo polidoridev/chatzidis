@@ -18,6 +18,7 @@ GitHub Pages serves the root of `main` at https://chatzidisglobal.com/ through t
 - `faq.html`, `privacy.html`, `terms.html`: public supporting pages.
 - `404.html`: custom error page; its base URL keeps assets and home links working for missing nested paths.
 - `styles.css`, `fonts.css`, `site.js`: shared styling, locally hosted fonts, mobile navigation and native sharing.
+- `scroll.js`: one-time section and photo reveals, with row-aware product and certificate staggering. The hero pause control also pauses section motion; reduced-motion and no-JavaScript visits remain fully readable.
 - `main.js`: on-demand hero animation with at most three concurrent image requests and 18 decoded frames in memory. Reduced-motion, data-saving and no-JavaScript visits use the static hero.
 - `assets/frames/web/` and `assets/frames/mobile/`: optimized animation frames; full source frames remain in the parent directory.
 - `assets/products/thumbs/`: responsive previews; product links still open the full artwork.

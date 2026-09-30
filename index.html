@@ -28,7 +28,7 @@
   <link rel="icon" href="favicon.ico" sizes="32x32" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="fonts.css?v=20260930-site" />
-  <link rel="stylesheet" href="styles.css?v=20260930-site" />
+  <link rel="stylesheet" href="styles.css?v=20260930-motion" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Golden Roots Global LLC", "alternateName": "Chatzidis", "url": "https://chatzidisglobal.com/", "logo": "https://chatzidisglobal.com/assets/img/chatzidis-logo.svg", "email": "golden.roots.global.llc@gmail.com", "telephone": "+1-786-645-3841", "address": {"@type": "PostalAddress", "streetAddress": "2380 Drew St, Suite 2", "addressLocality": "Clearwater", "addressRegion": "FL", "postalCode": "33765", "addressCountry": "US"}}</script>
 </head>
 <body>
@@ -84,7 +84,7 @@
           <a href="#collection" class="btn">Discover the Collection</a>
         </div>
 
-        <button class="motion-toggle" id="motion-toggle" type="button" aria-controls="pour-canvas" hidden>Pause animation</button>
+        <button class="motion-toggle" id="motion-toggle" type="button" aria-controls="main-content" hidden>Pause animations</button>
         <div class="progress-rail" aria-hidden="true"><span id="progress-dot"></span></div>
       </div>
     </section>
@@ -105,7 +105,7 @@
         </div>
       </div>
       <figure class="story-img reveal">
-        <img src="assets/img/grove.webp" width="1000" height="560" decoding="async" alt="Ancient Greek olive grove at golden hour" loading="lazy" />
+        <span class="story-image-window"><img src="assets/img/grove.webp" width="1000" height="560" decoding="async" alt="Ancient Greek olive grove at golden hour" loading="lazy" /></span>
         <figcaption>Olive groves under the Mediterranean sun</figcaption>
       </figure>
     </section>
@@ -209,7 +209,7 @@
       <div class="pillars">
         <article class="pillar reveal">
           <div class="pillar-cap"></div>
-          <img src="assets/img/harvest.webp" width="600" height="750" decoding="async" alt="Hands harvesting olives into a woven basket" loading="lazy" />
+          <div class="pillar-image-window"><img src="assets/img/harvest.webp" width="600" height="750" decoding="async" alt="Hands harvesting olives into a woven basket" loading="lazy" /></div>
           <div class="pillar-body">
             <span class="numeral">Α</span>
             <h3>Rich in Polyphenols</h3>
@@ -218,7 +218,7 @@
         </article>
         <article class="pillar reveal">
           <div class="pillar-cap"></div>
-          <img src="assets/img/thyme.webp" width="600" height="750" decoding="async" alt="Sprigs of wild Greek thyme on marble" loading="lazy" />
+          <div class="pillar-image-window"><img src="assets/img/thyme.webp" width="600" height="750" decoding="async" alt="Sprigs of wild Greek thyme on marble" loading="lazy" /></div>
           <div class="pillar-body">
             <span class="numeral">Β</span>
             <h3>Crafted by Nature</h3>
@@ -227,7 +227,7 @@
         </article>
         <article class="pillar reveal">
           <div class="pillar-cap"></div>
-          <img src="assets/img/table.webp" width="600" height="750" decoding="async" alt="Greek table with salad, bread and olive oil overlooking the sea" loading="lazy" />
+          <div class="pillar-image-window"><img src="assets/img/table.webp" width="600" height="750" decoding="async" alt="Greek table with salad, bread and olive oil overlooking the sea" loading="lazy" /></div>
           <div class="pillar-body">
             <span class="numeral">Γ</span>
             <h3>Part of Everyday Life</h3>
@@ -279,12 +279,12 @@
         <h2>Know what stands behind the bottle</h2>
         <p class="section-intro">Explore the documents supplied for Bio Cretan Olive Oil Ltd, which bottles our oils for Golden Roots Global LLC. Each document covers the named facility, activity, or product within its stated scope.</p>
       </header>
-      <ul class="cert-list reveal">
-        <li><strong>P.D.O.</strong><span>Messara, Crete</span><em>AGROCERT · Olive oil packaging</em><small>Valid until 18 Jan 2028</small><a href="assets/certificates/agrocert-messara-en.pdf" target="_blank" rel="noopener">English PDF ↗</a><a href="assets/certificates/agrocert-messara-el.pdf" target="_blank" rel="noopener">Greek PDF ↗</a></li>
-        <li><strong>P.D.O.</strong><span>Sitia Lasithiou Kritis</span><em>AGROCERT · Olive oil packaging</em><small>Valid until 31 Oct 2027</small><a href="assets/certificates/agrocert-sitia-en.pdf" target="_blank" rel="noopener">View certificate PDF ↗</a></li>
-        <li><strong>FSSC 22000</strong><span>Food safety management</span><em>Version 6 · TÜV Austria Hellas</em><small>Valid until 2 Dec 2027</small><a href="assets/certificates/fssc-22000-v6.pdf" target="_blank" rel="noopener">View certificate PDF ↗</a></li>
-        <li><strong>U.S. FDA</strong><span>Facility registration</span><em>Registrar Corp · 2026</em><small>Registration document for 2026</small><a href="assets/certificates/fda-registration-2026.pdf" target="_blank" rel="noopener">View registration PDF ↗</a></li>
-        <li><strong>DIO Organic</strong><span>Archived certificate</span><em>English &amp; Greek</em><small>Expired 27 Aug 2026</small><a href="assets/certificates/dio-organic-2025-2026.pdf" target="_blank" rel="noopener">View archived PDF ↗</a></li>
+      <ul class="cert-list">
+        <li class="reveal"><strong>P.D.O.</strong><span>Messara, Crete</span><em>AGROCERT · Olive oil packaging</em><small>Valid until 18 Jan 2028</small><a href="assets/certificates/agrocert-messara-en.pdf" target="_blank" rel="noopener">English PDF ↗</a><a href="assets/certificates/agrocert-messara-el.pdf" target="_blank" rel="noopener">Greek PDF ↗</a></li>
+        <li class="reveal"><strong>P.D.O.</strong><span>Sitia Lasithiou Kritis</span><em>AGROCERT · Olive oil packaging</em><small>Valid until 31 Oct 2027</small><a href="assets/certificates/agrocert-sitia-en.pdf" target="_blank" rel="noopener">View certificate PDF ↗</a></li>
+        <li class="reveal"><strong>FSSC 22000</strong><span>Food safety management</span><em>Version 6 · TÜV Austria Hellas</em><small>Valid until 2 Dec 2027</small><a href="assets/certificates/fssc-22000-v6.pdf" target="_blank" rel="noopener">View certificate PDF ↗</a></li>
+        <li class="reveal"><strong>U.S. FDA</strong><span>Facility registration</span><em>Registrar Corp · 2026</em><small>Registration document for 2026</small><a href="assets/certificates/fda-registration-2026.pdf" target="_blank" rel="noopener">View registration PDF ↗</a></li>
+        <li class="reveal"><strong>DIO Organic</strong><span>Archived certificate</span><em>English &amp; Greek</em><small>Expired 27 Aug 2026</small><a href="assets/certificates/dio-organic-2025-2026.pdf" target="_blank" rel="noopener">View archived PDF ↗</a></li>
       </ul>
       <p class="cert-note">P.D.O. certificates cover the specified regional oils and packaging activity; they do not apply automatically to every bottle in this collection. FDA registration is facility registration, not product approval. The supplied DIO certificate is retained for reference; contact us for updated organic certification and product-specific documentation.</p>
     </section>
@@ -299,12 +299,12 @@
     </section>
 
     <section class="faq-section" id="faq" aria-labelledby="faq-title">
-      <header class="section-head"><p class="eyebrow">A little more to know</p><h2 id="faq-title">From bottle to table</h2></header>
-      <details class="faq-item"><summary>How do I place an order?</summary><div><p>Email Golden Roots Global LLC or call +1 (786) 645-3841 with the oils and quantities you are interested in. We will discuss current availability, pricing and delivery options. There is no online checkout on this website.</p></div></details>
-<details class="faq-item"><summary>Do you offer wholesale or distribution enquiries?</summary><div><p>Yes. Contact us with your business name, location, products of interest and estimated quantities so we can discuss wholesale or distribution opportunities.</p></div></details>
-<details class="faq-item"><summary>Where can you deliver?</summary><div><p>Delivery availability and costs depend on the destination and order. Send us your city or postal code and requested quantities so we can confirm the options before you order.</p></div></details>
-<details class="faq-item"><summary>Which oils and bottle sizes are available?</summary><div><p>Early Harvest and Classic Koroneiki extra virgin olive oils are presented in 500 ml bottles. The seven Delicatessen flavours—thyme, chilli pepper, lemon, oregano, basil, rosemary and garlic—are presented in 250 ml bottles. Ask us for current stock.</p></div></details>
-      <p class="collection-note"><a class="text-link" href="faq.html">Read all frequently asked questions</a></p>
+      <header class="section-head reveal"><p class="eyebrow">A little more to know</p><h2 id="faq-title">From bottle to table</h2></header>
+      <details class="faq-item reveal"><summary>How do I place an order?</summary><div><p>Email Golden Roots Global LLC or call +1 (786) 645-3841 with the oils and quantities you are interested in. We will discuss current availability, pricing and delivery options. There is no online checkout on this website.</p></div></details>
+<details class="faq-item reveal"><summary>Do you offer wholesale or distribution enquiries?</summary><div><p>Yes. Contact us with your business name, location, products of interest and estimated quantities so we can discuss wholesale or distribution opportunities.</p></div></details>
+<details class="faq-item reveal"><summary>Where can you deliver?</summary><div><p>Delivery availability and costs depend on the destination and order. Send us your city or postal code and requested quantities so we can confirm the options before you order.</p></div></details>
+<details class="faq-item reveal"><summary>Which oils and bottle sizes are available?</summary><div><p>Early Harvest and Classic Koroneiki extra virgin olive oils are presented in 500 ml bottles. The seven Delicatessen flavours—thyme, chilli pepper, lemon, oregano, basil, rosemary and garlic—are presented in 250 ml bottles. Ask us for current stock.</p></div></details>
+      <p class="collection-note reveal"><a class="text-link" href="faq.html">Read all frequently asked questions</a></p>
     </section>
 
     <!-- ============ CONTACT ============ -->
@@ -356,6 +356,7 @@
   <script src="analytics.js?v=20260930-site" defer></script>
   <script src="cookies.js?v=20260930-site" defer></script>
   <script src="site.js?v=20260930-site" defer></script>
-  <script src="main.js?v=20260930-site" defer></script>
+  <script src="main.js?v=20260930-motion" defer></script>
+  <script src="scroll.js?v=20260930-motion" defer></script>
 </body>
 </html>
