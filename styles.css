@@ -309,7 +309,7 @@ h3 { font-size: 1.35rem; letter-spacing: .1em; }
 /* Original product photography and source documents */
 section[id] { scroll-margin-top: 90px; }
 .range { grid-template-columns: 1.2fr 1fr; max-width: 1000px; margin-inline: auto; }
-.range .range-img { display: block; aspect-ratio: 3 / 4; min-height: 0; flex: none; }
+.range .range-img { display: block; aspect-ratio: 2 / 3; min-height: 0; flex: none; }
 .range-img img { object-fit: contain; }
 .product-spec { font-size: .9em; margin-top: 1rem; }
 .text-link { text-decoration: underline; text-underline-offset: .25em; }
@@ -319,7 +319,7 @@ section[id] { scroll-margin-top: 90px; }
 .flavour-head p { margin-top: .7rem; }
 .flavour-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem 1.4rem; }
 .flavour-card { border-bottom: 1px solid rgba(63,74,31,.25); }
-.flavour-card img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: contain; }
+.flavour-card img { width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: contain; }
 .flavour-card > div { padding: 1rem 0 1.2rem; }
 .flavour-card h4 { font-family: var(--display); font-weight: 500; font-size: 1.15rem; margin-top: .35rem; color: var(--olive-deep); }
 .flavour-card .tag { color: var(--olive); font-size: .62rem; letter-spacing: .12em; }
@@ -345,7 +345,7 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
   .nav-links a:not(.nav-cta) { display: none; }
   .story, .product, .kitchen, .about-cols { grid-template-columns: 1fr; }
   .range { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; }
-  .range-feature .range-img { aspect-ratio: 4 / 3; flex: none; min-height: 0; }
+  .range-feature .range-img { aspect-ratio: 2 / 3; flex: none; min-height: 0; }
   .cert-list { grid-template-columns: repeat(2, 1fr); }
   .temps td:nth-child(2) { white-space: normal; }
   .pillars { grid-template-columns: 1fr; max-width: 520px; }
@@ -359,7 +359,7 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
 
 @media (max-width: 600px) {
   .cert-list { grid-template-columns: 1fr; }
-  .range .range-img { aspect-ratio: 3 / 4; }
+  .range .range-img { aspect-ratio: 2 / 3; }
 }
 #delicatessen { scroll-margin-top: 100px; }
 
